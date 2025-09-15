@@ -1,0 +1,32 @@
+footer {
+    width: 1200px;
+    height: 72px;
+    background-color: rgb(46,72,204);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-footer {
+    margin: 0px 8px;
+}
+
+.link-text {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1301px) {
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    footer {
+        height: 56px;
+    }
+}
+
