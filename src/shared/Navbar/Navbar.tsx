@@ -12,7 +12,7 @@ function Navbar() {
           <a className='link-text' href='/'>HOME</a>
         </div>
         <div className='link-nav'>
-          <a className='link-text' href='/'>SHOP</a>
+          <a className='link-text' href='/shop'>SHOP</a>
         </div>
       </div>
     </nav>
