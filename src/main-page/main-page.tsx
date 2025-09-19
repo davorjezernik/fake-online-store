@@ -1,7 +1,7 @@
 import React from 'react';
 import './main-page.css';
-import Navbar from '../shared/Navbar/Navbar';
-import Footer from '../shared/Footer/Footer';
+import Navbar from '../shared/navbar/Navbar';
+import Footer from '../shared/footer/Footer';
 
 function MainPage() {
   return (

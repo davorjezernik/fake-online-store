@@ -1,9 +1,9 @@
 import React from 'react';
-import './shop-page.css';
-import Navbar from '../shared/navbar/Navbar';
-import Footer from '../shared/footer/Footer';
+import '../../shop-page/shop-page.css';
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 
-function ShopPage() {
+function LegalNotice() {
   return (
     <section className='flex-align-justify'>
       <div className='main-container'>
@@ -12,7 +12,7 @@ function ShopPage() {
         </div>
 
         <div className='container-two flex-align-justify'>
-          <h1>shop page</h1>
+          <h1>Legal Notice</h1>
         </div>
 
         <div className='container-three'>
@@ -23,4 +23,4 @@ function ShopPage() {
   );
 }
 
-export default ShopPage;
+export default LegalNotice;
