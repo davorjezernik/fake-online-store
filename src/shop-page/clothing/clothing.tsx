@@ -1,22 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { fetchAPI, itemsAPI } from '../shop-page';
 
 function Clothing() {
 
-  function clothingList() {
-    const [item, setItem ] = itemState<items[]>([])
-    useEffect(() => {
-      fetchAPI().then((date) => setItem(data));
-    }, []);
-  }
+  const [items, setItems] = useState<ItemsAPI[]>([]);
+  
+  
+  useEffect(() => {
+      fetchAPI().then((data) => setItems(data));
+  }, [])
 
   return (
     <div>
-      {item.map((item) => (
+      {items.map((item) => (
         <div key={item.id}>
-          <p>{item.title}</p>
+          <h3>{item.title}</h3>
           <p>{item.price}</p>
-          <p>{item.description}</p>
-          <p>{item.category}</p>
         </div>
       ))}
     </div>

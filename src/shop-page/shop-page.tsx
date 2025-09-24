@@ -3,22 +3,21 @@ import './shop-page.css';
 import Navbar from '../shared/navbar/Navbar';
 import Footer from '../shared/footer/Footer';
 import { Outlet, Link } from 'react-router-dom';
-import Clothing from './clothing/clothing';
 
-  interface items {
-    id: number;
-    title: string;
-    price: number;
-    description: string;
-    category: string;
-  }
+export interface itemsAPI {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+}
 
-  async function fetchAPI() {
-    const URL = 'https://fakestoreapi.com/products';
-    const response = await fetch(URL);
-    const data = await response.json();
-    return data;
-  } 
+export async function fetchAPI() {
+  const URL = 'https://fakestoreapi.com/products';
+  const response = await fetch(URL);
+  const data = await response.json();
+  return data;
+} 
 
 function ShopPage() {
   return (
@@ -29,7 +28,7 @@ function ShopPage() {
         </div>
         <div className='layout-shop'>
           <div className='shop-links'>
-            <Link className='shop-links-style' to='/shop/clothing' onClick={clothingList()}>
+            <Link className='shop-links-style' to='/shop/clothing'>
               Clothing
             </Link>
             <Link className='shop-links-style' to='/shop/jewelery'>
